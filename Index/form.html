@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran</title>
+</head>
+<body>
+    <h2>Buat akun baru</h2>
+    <form action="welcome.html" method="POST">
+        <label for="first-name">Nama depan:</label>
+        <input type="text" id="first-name" name="first-name" required><br><br>
+
+        <label for="last-name">Nama keluarga:</label>
+        <input type="text" id="last-name" name="last-name" required><br><br>
+
+        <label>Jenis kelamin:</label><br>
+        <input type="radio" id="male" name="gender" value="Laki-Laki" required>
+        <label for="male">Laki-Laki</label><br>
+        <input type="radio" id="female" name="gender" value="Perempuan" required>
+        <label for="female">Perempuan</label><br><br>
+
+        <label for="nationality">Kebangsaan:</label>
+        <select id="nationality" name="nationality">
+            <option value="Indonesia">Indonesia</option>
+            <!-- Add more nationality options here -->
+        </select><br><br>
+
+        <label for="spoken-languages">Bahasa yang Diucapkan:</label>
+        <textarea id="spoken-languages" name="spoken-languages" required></textarea><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
